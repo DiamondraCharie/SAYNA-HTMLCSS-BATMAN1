@@ -1,0 +1,328 @@
+    @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+    
+    @font-face {
+        font-family: 'rajdhani', 'Space Grotesk';
+        src: url(police/Rajdhani-Medium.ttf), url(police/SpaceGrotesk-Regular.ttf)
+    }
+
+    :root {
+        --yellow-color: #FFFF00;
+        --yellow-light: #F8F184;
+        --gradient-bleu:#052133f8;
+        --white-color: #FFF;
+        --gradient-white: #EDDEBF67;
+        --gradient-red: #89000978;
+        --black-color: #000;
+        --white-gradient: #eddebf; 
+        --gray-color:#3b3a3a;
+        --bleu-color:#19587D;
+    }
+
+     * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+    }
+
+    h1 {
+       font-family: 'rajdhani';
+       font-size: 36px;
+       font-weight: 400;
+    }
+
+    button {
+       font-family: 'rajdhani';
+       font-size: 20px;
+       font-weight: 400;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    body {
+        background-color: black;
+        color: white;
+        font-family: 'Space Grotesk';
+        font-weight: 300;
+    }
+
+    /*Design de la navigation*/
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px 0;
+    }
+    
+    dd, dt {
+      font-family: 'rajdhani';
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    ul {
+      list-style: none;
+    }
+    nav ul a {
+      color: var(--white-color);
+      font-size: 25px;
+      font-weight: 500;
+      font-family: 'rajdhani';
+    }
+    nav ul a:hover {
+      color: var(--yellow-color);
+    }
+
+    /* Design de l'en-tête de la partie hero*/
+
+    #hero {
+      background-image: url(Illustrations/Bathome1.png);
+      height: 800px;
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-color: #19587D;
+      background-size: cover;
+    }
+
+    .content { 
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      width: 41%;
+      margin: 0 auto;
+      padding-top: 150px;
+    }
+
+   #hero .titre {
+      margin: 20px 0;
+   }
+
+   .btn {
+      text-decoration: none;
+      color: var(--white-color);
+      font-size: 16px;
+      padding: 10px 40px;
+      margin-top: 10px;
+      background: linear-gradient( 
+         80deg, var(--gradient-white),var(--gradient-red));
+      box-shadow: var(--black-color) 5px 5px 60px;
+   }
+    
+    #hero .fleche {
+       display: block;
+       margin: 0 auto;
+       margin-top: 270px;
+   }
+
+    .scroll {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      right: 80px;
+      top: 230px;
+    }
+
+    .scroll .social {
+      margin-top: 15px;
+    }
+
+    .batman-decoration {
+      float: right;
+      padding-left: 100%;
+    }
+   
+    /*Design de la section batman-personnage*/
+    #batman-cinéma, #batman-némésis, #batman-alliés, #batman-justice-league {
+      margin-top: 40px;
+    }
+
+    .batman-personnage, .némésis-personnage, .alliés-personnage    {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #batman-cinéma .titre,#batman-némésis .titre, #batman-alliés .titre, #batman-justice-league .titre, #multimedia .titre {
+       font-weight: 600;
+       font-size: 36px;
+       margin: 30px 0;
+       font-family: 'rajdhani';
+    }
+
+    #batman-cinéma .description, #batman-némésis .description, #batman-alliés .description, #batman-justice-league .description {
+      margin-bottom: 40px;
+      text-align: justify;
+      width: 80%;
+      font-size: 20px;
+    }
+    #batman-cinéma .personnage-info,#batman-némésis .personnage-info, #batman-alliés .personnage-info  {
+      text-align: center;
+    }
+
+
+    /*Design de la partie multimedia*/
+    #multimedia button {
+      position: relative;
+      top: 170px;
+      background: none;
+      border: none;
+    }
+
+    #multimedia button.right {
+      right: -90%;
+    }
+
+    #multimedia .slider-multimedia {
+      display: flex;
+      width: 60%;
+      margin: 40px auto;
+      margin-bottom: 120px;
+    }
+
+    #multimedia .slider-image {
+      width: 100%;
+    }
+
+    #multimedia .slider-content {
+      padding: 15px;
+      background: linear-gradient(
+        120deg, var(--gradient-white),var(--gradient-bleu)
+      );
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    #multimedia p{
+      font-size: 12px;
+      font-family: 'Space Grotesk';
+      text-align: justify;
+    }
+   
+    #multimedia .yellow {
+      color: var(--yellow-color);
+    }
+
+    /*Design de la partie contact et formulaire*/
+    #contact {
+      margin-top: 150px;
+      background: linear-gradient( 160deg, var(--gray-color),var(--gradient-bleu));
+      padding: 70px 0;
+    }
+
+    #contact .form {
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    #contact h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 60px;
+    }
+    #contact .titre {
+      display: block;
+      margin: 25px 0;
+    }
+
+    #contact .form input[type='email'], textarea {
+      display: block;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      width: 80%;
+      border-bottom: 1px solid darkgray;
+      background-color: transparent;
+      padding: 5px 0; 
+    }
+
+    #contact .news {
+      margin: 15px 0;
+      border-bottom: 1px solid darkgray;
+      width: 80%;
+    }
+
+    #contact .icon img {
+      transform: rotate(90deg);
+      width: 15px;
+    }
+
+    #contact .frequence {
+      display:flex;
+      justify-content: space-between;
+      margin: 15px 0;
+      border-bottom: 1px solid darkgray;
+      width: 80%;
+
+    }
+
+    .btn-group {
+      padding: 10px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .form input[type='radio'] {
+      opacity: 0;
+    }
+
+    .btn-group label {
+      cursor: pointer;
+      border: 2px solid;
+      border-image: linear-gradient(
+        60deg, var(--gradient-white),var(--bleu-color)
+      ) 1;
+      padding: 10px;
+      font-size: 20px;
+    }
+
+    input[type='submit'] {
+      display: block;
+      width: 230px;
+      margin: 25px auto;
+      padding: 15px 0;
+      cursor: pointer;
+      background-image: linear-gradient(
+        80deg, var(--gradient-white),var(--gradient-red));
+    }
+
+    #citations {
+      margin: 120px;
+    }
+
+    #citations .citation-carte {
+      text-align: center;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    #citations .citation-auteur {
+      padding-top: 30px;
+      font-size: 12px;
+      font-family: 'rajdhani';
+    }
+
+    #citations .guillemet-close {
+      float: right;
+    }
+
+    /*Design du footer*/
+    footer {
+      margin-top: 162px;
+    }
+
+    footer .text-footer {
+      text-align: center;
+      font-size: 10px;
+    }
+
+    footer .social-footer {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    footer .social-item {
+      padding: 15px;
+    }
