@@ -1,21 +1,23 @@
     @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
     
     @font-face {
-        font-family: 'rajdhani', 'Space Grotesk';
+        font-family: "rajdhani", "Space+Grotesk";
         src: url(police/Rajdhani-Medium.ttf), url(police/SpaceGrotesk-Regular.ttf)
     }
 
     :root {
         --yellow-color: #FFFF00;
         --yellow-light: #F8F184;
-        --gradient-bleu:#052133f8;
-        --white-color: #FFF;
-        --gradient-white: #EDDEBF67;
-        --gradient-red: #89000978;
-        --black-color: #000;
-        --white-gradient: #eddebf; 
-        --gray-color:#3b3a3a;
+        --white-color: #fff;
+        --red-color:#720d0d;
         --bleu-color:#19587D;
+        --black-color: #000;
+        --gradient-red: #53050a78;
+        --gradient-bleu:#052133f8;
+        --white-gradient: #f3f1ec44; 
+        --gray-color:#3b3a3a;
+        --gray-gradient: #c4c4c4;
+        --border-color: #BCBBBD;
     }
 
      * {
@@ -25,13 +27,13 @@
     }
 
     h1 {
-       font-family: 'rajdhani';
+       font-family: "rajdhani";
        font-size: 36px;
        font-weight: 400;
     }
 
     button {
-       font-family: 'rajdhani';
+       font-family: "rajdhani";
        font-size: 20px;
        font-weight: 400;
     }
@@ -40,13 +42,14 @@
         width: 80%;
         margin: 0 auto;
     }
+
     body {
         background-color: black;
         color: white;
-        font-family: 'Space Grotesk';
-        font-weight: 300;
+        font-family: "rajdhani";
+        font-weight: 400;
     }
-
+    
     /*Design de la navigation*/
 
     nav {
@@ -55,10 +58,14 @@
       justify-content: space-between;
       padding: 30px 0;
     }
-    
+
+    dl {
+      margin-top: 20px;
+    }
+    /*Mise en page du sous-titre des personnages batman*/
     dd, dt {
-      font-family: 'rajdhani';
-      font-size: 18px;
+      font-family: "rajdhani";
+      font-size: 20px;
       font-weight: 600;
     }
 
@@ -69,7 +76,7 @@
       color: var(--white-color);
       font-size: 25px;
       font-weight: 500;
-      font-family: 'rajdhani';
+      font-family: "rajdhani";
     }
     nav ul a:hover {
       color: var(--yellow-color);
@@ -86,28 +93,33 @@
       background-size: cover;
     }
 
-    .content { 
+    #hero .content { 
       display: flex;
       justify-content: center;
       flex-direction: column;
       text-align: center;
-      width: 41%;
+      width: 50%;
       margin: 0 auto;
       padding-top: 150px;
     }
 
+    #hero .texte {
+      font-family: "rajdhani";
+      font-size: 18px;
+      font-weight: 400;
+    }
+
    #hero .titre {
-      margin: 20px 0;
+      margin: 30px 0;
    }
 
-   .btn {
+   #hero .btn {
       text-decoration: none;
       color: var(--white-color);
       font-size: 16px;
-      padding: 10px 40px;
-      margin-top: 10px;
+      padding: 15px 50px;
       background: linear-gradient( 
-         80deg, var(--gradient-white),var(--gradient-red));
+         80deg, var(--white-gradient),var(--gradient-red));
       box-shadow: var(--black-color) 5px 5px 60px;
    }
     
@@ -126,7 +138,7 @@
       top: 230px;
     }
 
-    .scroll .social {
+   .scroll .social {
       margin-top: 15px;
     }
 
@@ -149,7 +161,7 @@
        font-weight: 600;
        font-size: 36px;
        margin: 30px 0;
-       font-family: 'rajdhani';
+       font-family: "rajdhani";
     }
 
     #batman-cinéma .description, #batman-némésis .description, #batman-alliés .description, #batman-justice-league .description {
@@ -187,18 +199,19 @@
     }
 
     #multimedia .slider-content {
-      padding: 15px;
+      padding: 12px;
       background: linear-gradient(
-        120deg, var(--gradient-white),var(--gradient-bleu)
+        120deg, var(--white-gradient),var(--gradient-bleu)
       );
       border-top-right-radius: 20px;
       border-bottom-right-radius: 20px;
     }
 
-    #multimedia p{
-      font-size: 12px;
-      font-family: 'Space Grotesk';
+    #multimedia p {
+      font-size: 13px;
+      font-family: "Space+Grotesk";
       text-align: justify;
+      margin-bottom: 15px;
     }
    
     #multimedia .yellow {
@@ -232,7 +245,7 @@
       border-top: none;
       border-right: none;
       border-left: none;
-      width: 80%;
+      width: 90%;
       border-bottom: 1px solid darkgray;
       background-color: transparent;
       padding: 5px 0; 
@@ -241,7 +254,8 @@
     #contact .news {
       margin: 15px 0;
       border-bottom: 1px solid darkgray;
-      width: 80%;
+      width: 90%;
+      margin-top: 25px;
     }
 
     #contact .icon img {
@@ -249,20 +263,30 @@
       width: 15px;
     }
 
+    #contact .text {
+      color: darkgray;
+      font-weight: 100;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
     #contact .frequence {
       display:flex;
       justify-content: space-between;
       margin: 15px 0;
       border-bottom: 1px solid darkgray;
-      width: 80%;
-
+      width: 90%;
     }
 
     .btn-group {
       padding: 10px;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
     }
+
+    /*.bouton {
+      margin-right: 20px;
+    }*/
 
     .form input[type='radio'] {
       opacity: 0;
@@ -270,12 +294,14 @@
 
     .btn-group label {
       cursor: pointer;
-      border: 2px solid;
+      border: 1px solid;
       border-image: linear-gradient(
-        60deg, var(--gradient-white),var(--bleu-color)
+        80deg, var(--white-color),var(--bleu-color)
       ) 1;
       padding: 10px;
-      font-size: 20px;
+      font-size: 12px;
+      font-family: "Space+Grotesk";
+      font-weight: 300;
     }
 
     input[type='submit'] {
@@ -285,9 +311,13 @@
       padding: 15px 0;
       cursor: pointer;
       background-image: linear-gradient(
-        80deg, var(--gradient-white),var(--gradient-red));
+        80deg, var(--white-color),var(--red-color));
     }
 
+    .my-bouton:hover {
+      color: linear-gradient(
+        80deg, var(--white-color),var(--red-color));;
+    }
     #citations {
       margin: 120px;
     }
@@ -301,7 +331,7 @@
     #citations .citation-auteur {
       padding-top: 30px;
       font-size: 12px;
-      font-family: 'rajdhani';
+      font-family: "rajdhani";
     }
 
     #citations .guillemet-close {
@@ -326,3 +356,4 @@
     footer .social-item {
       padding: 15px;
     }
+   
